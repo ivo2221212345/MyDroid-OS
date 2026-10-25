@@ -1,0 +1,25 @@
+
+name: MyDroid OS Test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz projekt
+        uses: actions/checkout@v4
+
+      - name: Test MyDroid OS
+        run: |
+          echo "Testing MyDroid OS 1.0"
+          test -f mydroid.mk
+          test -f mydroid.prop
+          test -f mydroid_config.mk
+          test -f AndroidProducts.mk
+          test -f Android.bp
+          test -f system/bin/mydroid-info.sh
+          sh -n system/bin/mydroid-info.sh
+          echo "SUCCESS! Files are present and script syntax is OK!"
