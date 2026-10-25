@@ -1,0 +1,8 @@
+
+# MyDroid OS 1.0
+# Konfiguracja naszego Androida
+
+ro.mydroid.name=MyDroid OS
+ro.mydroid.version=1.0
+ro.mydroid.creator=Ivo
+ro.mydroid.theme=dark
