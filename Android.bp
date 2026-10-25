@@ -1,0 +1,6 @@
+
+sh_binary {
+    name: "mydroid-info",
+    src: "system/bin/mydroid-info.sh",
+    filename: "mydroid-info",
+}
